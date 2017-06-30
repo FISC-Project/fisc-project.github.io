@@ -278,6 +278,82 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <style id="current-page-style">
         .page-home {
             display: inherit;
@@ -544,7 +620,7 @@
                               (!bodyEl.hasClass('enable-mobile') || $(window).width() >= 480)) {
                               // use ScrollReveal API
                               sr.reveal(silexElement, {
-                                origin:  'right',
+                                origin:  'left',
                                 distance: '20px',
                                 duration: 500,
                                 delay: 0,
@@ -629,8 +705,62 @@
 
 
 
-            <div data-silex-type="container" class="editable-style silex-id-1498703854046-9 container-element" data-silex-id="silex-id-1498703854046-9">
-
+            <div data-silex-type="container" class="editable-style silex-id-1498703854046-9 container-element silex-component-animated-container" data-silex-id="silex-id-1498703854046-9">
+                <div id="id_1491937951820_925"></div>
+                <script type="text/javascript">
+                    /*
+                        animation widget from here: https://github.com/silexlabs/Silex/issues/443
+                        */
+                        $(function() {
+                          var bodyEl = $('body');
+                          // execute only outside silex editor
+                          if(!bodyEl.hasClass('silex-runtime')) return;
+                          // init ScrollReveal lib
+                          window.sr = window.sr || ScrollReveal();
+                          // animate this element on page change
+                          bodyEl.on('pageChanged', animate_1491937951820_925);
+                          // animate this element at start
+                          animate_1491937951820_925();
+                          // the function to start the animation
+                          function animate_1491937951820_925 (event, pageName) {
+                            // get the silex element in which we are
+                            var silexElement = $('#id_1491937951820_925').parent();
+                            if(// only if the element is in the dom
+                              silexElement &&
+                              // and is visible in the current page
+                              (silexElement.hasClass(bodyEl.pageable('option').currentPage) ||
+                              // or visible in all pages
+                              !silexElement.hasClass('paged-element')) &&
+                              // but never in mobile mode
+                              (!bodyEl.hasClass('enable-mobile') || $(window).width() >= 480)) {
+                              // use ScrollReveal API
+                              sr.reveal(silexElement, {
+                                origin:  'left',
+                                distance: '20px',
+                                duration: 500,
+                                delay: 0,
+                                rotate: { x: 0, y: 0, z: 0 },
+                                opacity: 0,
+                                scale: 1,
+                                easing: 'linear',
+                                reset: false,
+                                beforeReveal: function(el){
+                                  
+                                },
+                                beforeReset: function(el){
+                                  
+                                },
+                                afterReveal: function(el){
+                                  
+                                },
+                                afterReset: function(el){
+                                  
+                                }
+                              });
+                            }
+                          }
+                        })
+                </script>
 
 
                 <div data-silex-type="text" class="editable-style silex-id-1498703948787-10 text-element" data-silex-id="silex-id-1498703948787-10">
@@ -657,7 +787,63 @@
 
 
 
-            <div data-silex-type="container" class="editable-style silex-id-1498703698523-4 container-element" data-silex-id="silex-id-1498703698523-4">
+            <div data-silex-type="container" class="editable-style silex-id-1498703698523-4 container-element silex-component-animated-container" data-silex-id="silex-id-1498703698523-4">
+                <div id="id_1491937951820_926"></div>
+                <script type="text/javascript">
+                    /*
+                        animation widget from here: https://github.com/silexlabs/Silex/issues/443
+                        */
+                        $(function() {
+                          var bodyEl = $('body');
+                          // execute only outside silex editor
+                          if(!bodyEl.hasClass('silex-runtime')) return;
+                          // init ScrollReveal lib
+                          window.sr = window.sr || ScrollReveal();
+                          // animate this element on page change
+                          bodyEl.on('pageChanged', animate_1491937951820_926);
+                          // animate this element at start
+                          animate_1491937951820_926();
+                          // the function to start the animation
+                          function animate_1491937951820_926 (event, pageName) {
+                            // get the silex element in which we are
+                            var silexElement = $('#id_1491937951820_926').parent();
+                            if(// only if the element is in the dom
+                              silexElement &&
+                              // and is visible in the current page
+                              (silexElement.hasClass(bodyEl.pageable('option').currentPage) ||
+                              // or visible in all pages
+                              !silexElement.hasClass('paged-element')) &&
+                              // but never in mobile mode
+                              (!bodyEl.hasClass('enable-mobile') || $(window).width() >= 480)) {
+                              // use ScrollReveal API
+                              sr.reveal(silexElement, {
+                                origin:  'left',
+                                distance: '20px',
+                                duration: 500,
+                                delay: 0,
+                                rotate: { x: 0, y: 0, z: 0 },
+                                opacity: 0,
+                                scale: 1,
+                                easing: 'linear',
+                                reset: false,
+                                beforeReveal: function(el){
+                                  
+                                },
+                                beforeReset: function(el){
+                                  
+                                },
+                                afterReveal: function(el){
+                                  
+                                },
+                                afterReset: function(el){
+                                  
+                                }
+                              });
+                            }
+                          }
+                        })
+                </script>
+
 
                 <div data-silex-type="text" class="editable-style text-element silex-id-1498678391814-6" data-silex-id="silex-id-1498678391814-6">
                     <div class="silex-element-content normal">
@@ -677,7 +863,67 @@
                     </div>
                 </div>
             </div>
-            <div data-silex-type="container" class="editable-style silex-id-1498703658326-3 container-element" data-silex-id="silex-id-1498703658326-3">
+            <div data-silex-type="container" class="editable-style silex-id-1498703658326-3 container-element silex-component-animated-container" data-silex-id="silex-id-1498703658326-3">
+                <div id="id_1491937951820_927"></div>
+                <script type="text/javascript">
+                    /*
+                        animation widget from here: https://github.com/silexlabs/Silex/issues/443
+                        */
+                        $(function() {
+                          var bodyEl = $('body');
+                          // execute only outside silex editor
+                          if(!bodyEl.hasClass('silex-runtime')) return;
+                          // init ScrollReveal lib
+                          window.sr = window.sr || ScrollReveal();
+                          // animate this element on page change
+                          bodyEl.on('pageChanged', animate_1491937951820_927);
+                          // animate this element at start
+                          animate_1491937951820_927();
+                          // the function to start the animation
+                          function animate_1491937951820_927 (event, pageName) {
+                            // get the silex element in which we are
+                            var silexElement = $('#id_1491937951820_927').parent();
+                            if(// only if the element is in the dom
+                              silexElement &&
+                              // and is visible in the current page
+                              (silexElement.hasClass(bodyEl.pageable('option').currentPage) ||
+                              // or visible in all pages
+                              !silexElement.hasClass('paged-element')) &&
+                              // but never in mobile mode
+                              (!bodyEl.hasClass('enable-mobile') || $(window).width() >= 480)) {
+                              // use ScrollReveal API
+                              sr.reveal(silexElement, {
+                                origin:  'left',
+                                distance: '20px',
+                                duration: 500,
+                                delay: 0,
+                                rotate: { x: 0, y: 0, z: 0 },
+                                opacity: 0,
+                                scale: 1,
+                                easing: 'linear',
+                                reset: false,
+                                beforeReveal: function(el){
+                                  
+                                },
+                                beforeReset: function(el){
+                                  
+                                },
+                                afterReveal: function(el){
+                                  
+                                },
+                                afterReset: function(el){
+                                  
+                                }
+                              });
+                            }
+                          }
+                        })
+                </script>
+
+
+
+
+
                 <div data-silex-type="text" class="editable-style text-element silex-id-1498682239537-3" data-silex-id="silex-id-1498682239537-3">
                     <div class="silex-element-content normal">
                         <h2 class="heading2">
@@ -685,7 +931,6 @@
                         </h2>
                     </div>
                 </div>
-
 
                 <div data-silex-type="text" class="editable-style text-element content silex-id-1498682250985-4" data-silex-id="silex-id-1498682250985-4">
                     <div class="silex-element-content normal">
@@ -695,7 +940,63 @@
                     </div>
                 </div>
             </div>
-            <div data-silex-type="container" class="editable-style silex-id-1498706032381-12 container-element" data-silex-id="silex-id-1498706032381-12">
+            <div data-silex-type="container" class="editable-style silex-id-1498706032381-12 container-element silex-component-animated-container" data-silex-id="silex-id-1498706032381-12">
+                <div id="id_1491937951820_928"></div>
+                <script type="text/javascript">
+                    /*
+                        animation widget from here: https://github.com/silexlabs/Silex/issues/443
+                        */
+                        $(function() {
+                          var bodyEl = $('body');
+                          // execute only outside silex editor
+                          if(!bodyEl.hasClass('silex-runtime')) return;
+                          // init ScrollReveal lib
+                          window.sr = window.sr || ScrollReveal();
+                          // animate this element on page change
+                          bodyEl.on('pageChanged', animate_1491937951820_928);
+                          // animate this element at start
+                          animate_1491937951820_928();
+                          // the function to start the animation
+                          function animate_1491937951820_928 (event, pageName) {
+                            // get the silex element in which we are
+                            var silexElement = $('#id_1491937951820_928').parent();
+                            if(// only if the element is in the dom
+                              silexElement &&
+                              // and is visible in the current page
+                              (silexElement.hasClass(bodyEl.pageable('option').currentPage) ||
+                              // or visible in all pages
+                              !silexElement.hasClass('paged-element')) &&
+                              // but never in mobile mode
+                              (!bodyEl.hasClass('enable-mobile') || $(window).width() >= 480)) {
+                              // use ScrollReveal API
+                              sr.reveal(silexElement, {
+                                origin:  'left',
+                                distance: '20px',
+                                duration: 500,
+                                delay: 0,
+                                rotate: { x: 0, y: 0, z: 0 },
+                                opacity: 0,
+                                scale: 1,
+                                easing: 'linear',
+                                reset: false,
+                                beforeReveal: function(el){
+                                  
+                                },
+                                beforeReset: function(el){
+                                  
+                                },
+                                afterReveal: function(el){
+                                  
+                                },
+                                afterReset: function(el){
+                                  
+                                }
+                              });
+                            }
+                          }
+                        })
+                </script>
+
                 <div data-silex-type="text" class="editable-style text-element silex-id-1498705775177-11" data-silex-id="silex-id-1498705775177-11">
                     <div class="silex-element-content normal">
                         <h2 class="heading2">
@@ -1113,7 +1414,10 @@
         <div data-silex-type="container" class="editable-style silex-id-1498779899202-2 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1498779899202-2"></div>
     </div>
 
-    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1498771616474-7 section-element theisa" data-silex-id="silex-id-1498771616474-7">
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1498771616474-7 section-element theisa silex-component-animated-container" data-silex-id="silex-id-1498771616474-7">
+        <div id="id_1491937951820_929"></div>
+
+
         <div data-silex-type="container" class="editable-style silex-id-1498771616472-6 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1498771616472-6">
 
 
@@ -1143,101 +1447,353 @@
 
 
 
-            <div data-silex-type="text" class="editable-style text-element silex-id-1498771788009-24" data-silex-id="silex-id-1498771788009-24">
-                <div class="silex-element-content normal">
-                    <h2 class="heading2">
-                        <font color="#000000">The ISA - Instruction Set Architecture</font>
-                    </h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div data-silex-type="container" class="editable-style container-element silex-component silex-component-animated-container silex-id-1498794921030-8 page-home paged-element" data-silex-id="silex-id-1498794921030-8">
+                <div id="id_1498794921036_511"></div>
+                <script type="text/javascript">
+                    /*
+                    animation widget from here: https://github.com/silexlabs/Silex/issues/443
+                    */
+                    $(function() {
+                      var bodyEl = $('body');
+                      // execute only outside silex editor
+                      if(!bodyEl.hasClass('silex-runtime')) return;
+                      // init ScrollReveal lib
+                      window.sr = window.sr || ScrollReveal();
+                      // animate this element on page change
+                      bodyEl.on('pageChanged', animate_1498794921036_511);
+                      // animate this element at start
+                      animate_1498794921036_511();
+                      // the function to start the animation
+                      function animate_1498794921036_511 (event, pageName) {
+                        // get the silex element in which we are
+                        var silexElement = $('#id_1498794921036_511').parent();
+                        if(// only if the element is in the dom
+                          silexElement &&
+                          // and is visible in the current page
+                          (silexElement.hasClass(bodyEl.pageable('option').currentPage) ||
+                          // or visible in all pages
+                          !silexElement.hasClass('paged-element')) &&
+                          // but never in mobile mode
+                          (!bodyEl.hasClass('enable-mobile') || $(window).width() >= 480)) {
+                          // use ScrollReveal API
+                          sr.reveal(silexElement, {
+                            origin:  'left',
+                            distance: '20px',
+                            duration: 500,
+                            delay: 0,
+                            rotate: { x: 0, y: 0, z: 0 },
+                            opacity: 0,
+                            scale: 1,
+                            easing: 'linear',
+                            reset: false,
+                            beforeReveal: function(el){
+                              
+                            },
+                            beforeReset: function(el){
+                              
+                            },
+                            afterReveal: function(el){
+                              
+                            },
+                            afterReset: function(el){
+                              
+                            }
+                          });
+                        }
+                      }
+                    })
+                </script>
+
+
+
+                <div data-silex-type="image" class="editable-style silex-id-1498775141260-39 image-element" data-silex-id="silex-id-1498775141260-39">
+                    <a href="res/img/design/isa/instructionset/isafull.png"><img src="assets/isafull_resized3.jpg" class="silex-element-content"></a>
+                </div>
+                <div data-silex-type="text" class="editable-style silex-id-1498773897378-32 text-element" data-silex-id="silex-id-1498773897378-32">
+                    <div class="silex-element-content normal">
+                        <font size="6" color="#444444">Complete set of instructions</font>
+                    </div>
+                </div>
+                <div data-silex-type="text" class="editable-style text-element silex-id-1498771788009-24" data-silex-id="silex-id-1498771788009-24">
+                    <div class="silex-element-content normal">
+                        <h2 class="heading2">
+                            <font color="#000000">The ISA - Instruction Set Architecture</font>
+                        </h2>
+                    </div>
                 </div>
             </div>
+            <div data-silex-type="container" class="editable-style container-element silex-component silex-component-animated-container silex-id-1498795138135-14 page-home paged-element" data-silex-id="silex-id-1498795138135-14">
+                <div id="id_1498795138139_817"></div>
+                <script type="text/javascript">
+                    /*
+                    animation widget from here: https://github.com/silexlabs/Silex/issues/443
+                    */
+                    $(function() {
+                      var bodyEl = $('body');
+                      // execute only outside silex editor
+                      if(!bodyEl.hasClass('silex-runtime')) return;
+                      // init ScrollReveal lib
+                      window.sr = window.sr || ScrollReveal();
+                      // animate this element on page change
+                      bodyEl.on('pageChanged', animate_1498795138139_817);
+                      // animate this element at start
+                      animate_1498795138139_817();
+                      // the function to start the animation
+                      function animate_1498795138139_817 (event, pageName) {
+                        // get the silex element in which we are
+                        var silexElement = $('#id_1498795138139_817').parent();
+                        if(// only if the element is in the dom
+                          silexElement &&
+                          // and is visible in the current page
+                          (silexElement.hasClass(bodyEl.pageable('option').currentPage) ||
+                          // or visible in all pages
+                          !silexElement.hasClass('paged-element')) &&
+                          // but never in mobile mode
+                          (!bodyEl.hasClass('enable-mobile') || $(window).width() >= 480)) {
+                          // use ScrollReveal API
+                          sr.reveal(silexElement, {
+                            origin:  'left',
+                            distance: '20px',
+                            duration: 500,
+                            delay: 0,
+                            rotate: { x: 0, y: 0, z: 0 },
+                            opacity: 0,
+                            scale: 1,
+                            easing: 'linear',
+                            reset: false,
+                            beforeReveal: function(el){
+                              
+                            },
+                            beforeReset: function(el){
+                              
+                            },
+                            afterReveal: function(el){
+                              
+                            },
+                            afterReset: function(el){
+                              
+                            }
+                          });
+                        }
+                      }
+                    })
+                </script>
 
 
+                <div data-silex-type="text" class="editable-style text-element silex-id-1498775847548-0" data-silex-id="silex-id-1498775847548-0">
+                    <div class="silex-element-content normal">
+                        <font size="6" color="#444444">Instruction formats</font>
+                    </div>
+                </div>
+                <div data-silex-type="text" class="editable-style text-element silex-id-1498775925571-2" data-silex-id="silex-id-1498775925571-2">
+                    <div class="silex-element-content normal">
+                        <font size="6" color="#444444">Registers</font>
+                    </div>
+                </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <div data-silex-type="image" class="editable-style silex-id-1498775141260-39 image-element" data-silex-id="silex-id-1498775141260-39">
-                <a href="res/img/design/isa/instructionset/isafull.png"><img src="assets/isafull_resized3.jpg" class="silex-element-content"></a>
-            </div>
-            <div data-silex-type="text" class="editable-style silex-id-1498773897378-32 text-element" data-silex-id="silex-id-1498773897378-32">
-                <div class="silex-element-content normal">
-                    <font size="6" color="#444444">Complete set of instructions</font>
+                <div data-silex-type="text" class="editable-style text-element silex-id-1498775979641-4" data-silex-id="silex-id-1498775979641-4">
+                    <div class="silex-element-content normal">
+                        <font size="6" color="#444444">Memory and data specifications</font>
+                    </div>
+                </div>
+                <div data-silex-type="image" class="editable-style silex-id-1498776051516-5 image-element" data-silex-id="silex-id-1498776051516-5">
+                    <a href="res/img/design/isa/memoryanddataspecifications/memdataspec.png"><img src="assets/memdataspec_resized.jpg" class="silex-element-content"></a>
+                </div>
+                <div data-silex-type="image" class="editable-style silex-id-1498775940484-3 image-element" data-silex-id="silex-id-1498775940484-3">
+                    <a href="res/img/design/isa/registers/regs.png"><img src="assets/regs_resized.jpg" class="silex-element-content"></a>
+                </div>
+                <div data-silex-type="image" class="editable-style silex-id-1498775868830-1 image-element" data-silex-id="silex-id-1498775868830-1">
+                    <a href="res/img/design/isa/instructionformats/ifmt.png"><img src="assets/ifmt_resized3.jpg" class="silex-element-content"></a>
                 </div>
             </div>
-            <div data-silex-type="text" class="editable-style text-element silex-id-1498775847548-0" data-silex-id="silex-id-1498775847548-0">
-                <div class="silex-element-content normal">
-                    <font size="6" color="#444444">Instruction formats</font>
+            <div data-silex-type="container" class="editable-style container-element silex-component silex-component-animated-container silex-id-1498795192006-18 page-home paged-element" data-silex-id="silex-id-1498795192006-18">
+                <div id="id_1498795192010_421"></div>
+                <script type="text/javascript">
+                    /*
+                    animation widget from here: https://github.com/silexlabs/Silex/issues/443
+                    */
+                    $(function() {
+                      var bodyEl = $('body');
+                      // execute only outside silex editor
+                      if(!bodyEl.hasClass('silex-runtime')) return;
+                      // init ScrollReveal lib
+                      window.sr = window.sr || ScrollReveal();
+                      // animate this element on page change
+                      bodyEl.on('pageChanged', animate_1498795192010_421);
+                      // animate this element at start
+                      animate_1498795192010_421();
+                      // the function to start the animation
+                      function animate_1498795192010_421 (event, pageName) {
+                        // get the silex element in which we are
+                        var silexElement = $('#id_1498795192010_421').parent();
+                        if(// only if the element is in the dom
+                          silexElement &&
+                          // and is visible in the current page
+                          (silexElement.hasClass(bodyEl.pageable('option').currentPage) ||
+                          // or visible in all pages
+                          !silexElement.hasClass('paged-element')) &&
+                          // but never in mobile mode
+                          (!bodyEl.hasClass('enable-mobile') || $(window).width() >= 480)) {
+                          // use ScrollReveal API
+                          sr.reveal(silexElement, {
+                            origin:  'left',
+                            distance: '20px',
+                            duration: 500,
+                            delay: 0,
+                            rotate: { x: 0, y: 0, z: 0 },
+                            opacity: 0,
+                            scale: 1,
+                            easing: 'linear',
+                            reset: false,
+                            beforeReveal: function(el){
+                              
+                            },
+                            beforeReset: function(el){
+                              
+                            },
+                            afterReveal: function(el){
+                              
+                            },
+                            afterReset: function(el){
+                              
+                            }
+                          });
+                        }
+                      }
+                    })
+                </script>
+                <div data-silex-type="text" class="editable-style text-element silex-id-1498776071824-6" data-silex-id="silex-id-1498776071824-6">
+                    <div class="silex-element-content normal">
+                        <font size="6" color="#444444">CPU Modes, flags and permissions</font>
+                    </div>
+                </div>
+                <div data-silex-type="text" class="editable-style text-element silex-id-1498776197251-8" data-silex-id="silex-id-1498776197251-8">
+                    <div class="silex-element-content normal">
+                        <font size="6" color="#444444">Condition codes for branching</font>
+                    </div>
+                </div>
+                <div data-silex-type="text" class="editable-style silex-id-1498776314570-11 text-element" data-silex-id="silex-id-1498776314570-11">
+                    <div class="silex-element-content normal"><span style="color: rgb(68, 68, 68); font-size: large; text-align: center;">(COMING SOON...)</span></div>
+                </div>
+                <div data-silex-type="text" class="editable-style text-element silex-id-1498776390753-13" data-silex-id="silex-id-1498776390753-13">
+                    <div class="silex-element-content normal"><span style="color: rgb(68, 68, 68); font-size: large; text-align: center;">(COMING SOON...)</span></div>
+                </div>
+                <div data-silex-type="text" class="editable-style text-element silex-id-1498776342721-12" data-silex-id="silex-id-1498776342721-12">
+                    <div class="silex-element-content normal">
+                        <font color="#444444" size="6">Virtual Memory table structure</font>
+                    </div>
+                </div>
+                <div data-silex-type="text" class="editable-style text-element silex-id-1498776260154-10" data-silex-id="silex-id-1498776260154-10">
+                    <div class="silex-element-content normal">
+                        <font color="#444444" size="6">Function calling conventions</font>
+                    </div>
+                </div>
+                <div data-silex-type="image" class="editable-style silex-id-1498776143991-7 image-element" data-silex-id="silex-id-1498776143991-7">
+                    <a href="res/img/design/isa/modesandcpsr/modecpsr.png"><img src="assets/modecpsr_resized.jpg" class="silex-element-content"></a>
+                </div>
+                <div data-silex-type="image" class="editable-style silex-id-1498776250468-9 image-element" data-silex-id="silex-id-1498776250468-9">
+                    <a href="res/img/design/isa/branchconditioncodes/bcc.png"><img src="assets/bcc_resized.jpg" class="silex-element-content"></a>
                 </div>
             </div>
-            <div data-silex-type="image" class="editable-style silex-id-1498775868830-1 image-element" data-silex-id="silex-id-1498775868830-1">
-                <a href="res/img/design/isa/instructionformats/ifmt.png"><img src="assets/ifmt_resized3.jpg" class="silex-element-content"></a>
-            </div>
-            <div data-silex-type="text" class="editable-style text-element silex-id-1498775925571-2" data-silex-id="silex-id-1498775925571-2">
-                <div class="silex-element-content normal">
-                    <font size="6" color="#444444">Registers</font>
-                </div>
-            </div>
-            <div data-silex-type="image" class="editable-style silex-id-1498775940484-3 image-element" data-silex-id="silex-id-1498775940484-3">
-                <a href="res/img/design/isa/registers/regs.png"><img src="assets/regs_resized.jpg" class="silex-element-content"></a>
-            </div>
-            <div data-silex-type="text" class="editable-style text-element silex-id-1498775979641-4" data-silex-id="silex-id-1498775979641-4">
-                <div class="silex-element-content normal">
-                    <font size="6" color="#444444">Memory and data specifications</font>
-                </div>
-            </div>
-            <div data-silex-type="image" class="editable-style silex-id-1498776051516-5 image-element" data-silex-id="silex-id-1498776051516-5">
-                <a href="res/img/design/isa/memoryanddataspecifications/memdataspec.png"><img src="assets/memdataspec_resized.jpg" class="silex-element-content"></a>
-            </div>
-            <div data-silex-type="text" class="editable-style text-element silex-id-1498776071824-6" data-silex-id="silex-id-1498776071824-6">
-                <div class="silex-element-content normal">
-                    <font size="6" color="#444444">CPU Modes, flags and permissions</font>
-                </div>
-            </div>
-            <div data-silex-type="image" class="editable-style silex-id-1498776143991-7 image-element" data-silex-id="silex-id-1498776143991-7">
-                <a href="res/img/design/isa/modesandcpsr/modecpsr.png"><img src="assets/modecpsr_resized.jpg" class="silex-element-content"></a>
-            </div>
-            <div data-silex-type="text" class="editable-style text-element silex-id-1498776197251-8" data-silex-id="silex-id-1498776197251-8">
-                <div class="silex-element-content normal">
-                    <font size="6" color="#444444">Condition codes for branching</font>
-                </div>
-            </div>
-            <div data-silex-type="image" class="editable-style silex-id-1498776250468-9 image-element" data-silex-id="silex-id-1498776250468-9">
-                <a href="res/img/design/isa/branchconditioncodes/bcc.png"><img src="assets/bcc_resized.jpg" class="silex-element-content"></a>
-            </div>
-            <div data-silex-type="text" class="editable-style text-element silex-id-1498776260154-10" data-silex-id="silex-id-1498776260154-10">
-                <div class="silex-element-content normal">
-                    <font color="#444444" size="6">Function calling conventions</font>
-                </div>
-            </div>
-            <div data-silex-type="text" class="editable-style silex-id-1498776314570-11 text-element" data-silex-id="silex-id-1498776314570-11">
-                <div class="silex-element-content normal"><b style="color: rgb(68, 68, 68); font-size: large; text-align: center;">(COMING SOON...)</b></div>
-            </div>
-            <div data-silex-type="text" class="editable-style text-element silex-id-1498776342721-12" data-silex-id="silex-id-1498776342721-12">
-                <div class="silex-element-content normal">
-                    <font color="#444444" size="6">Virtual Memory table structure</font>
-                </div>
-            </div>
-            <div data-silex-type="text" class="editable-style text-element silex-id-1498776390753-13" data-silex-id="silex-id-1498776390753-13">
-                <div class="silex-element-content normal"><b style="color: rgb(68, 68, 68); font-size: large; text-align: center;">(COMING SOON...)</b></div>
+            <div data-silex-type="container" class="editable-style container-element silex-component silex-component-animated-container silex-id-1498795377312-25 page-home paged-element" data-silex-id="silex-id-1498795377312-25">
+                <div id="id_1498795377315_217"></div>
+                <script type="text/javascript">
+                    /*
+                    animation widget from here: https://github.com/silexlabs/Silex/issues/443
+                    */
+                    $(function() {
+                      var bodyEl = $('body');
+                      // execute only outside silex editor
+                      if(!bodyEl.hasClass('silex-runtime')) return;
+                      // init ScrollReveal lib
+                      window.sr = window.sr || ScrollReveal();
+                      // animate this element on page change
+                      bodyEl.on('pageChanged', animate_1498795377315_217);
+                      // animate this element at start
+                      animate_1498795377315_217();
+                      // the function to start the animation
+                      function animate_1498795377315_217 (event, pageName) {
+                        // get the silex element in which we are
+                        var silexElement = $('#id_1498795377315_217').parent();
+                        if(// only if the element is in the dom
+                          silexElement &&
+                          // and is visible in the current page
+                          (silexElement.hasClass(bodyEl.pageable('option').currentPage) ||
+                          // or visible in all pages
+                          !silexElement.hasClass('paged-element')) &&
+                          // but never in mobile mode
+                          (!bodyEl.hasClass('enable-mobile') || $(window).width() >= 480)) {
+                          // use ScrollReveal API
+                          sr.reveal(silexElement, {
+                            origin:  'left',
+                            distance: '20px',
+                            duration: 500,
+                            delay: 0,
+                            rotate: { x: 0, y: 0, z: 0 },
+                            opacity: 0,
+                            scale: 1,
+                            easing: 'linear',
+                            reset: false,
+                            beforeReveal: function(el){
+                              
+                            },
+                            beforeReset: function(el){
+                              
+                            },
+                            afterReveal: function(el){
+                              
+                            },
+                            afterReset: function(el){
+                              
+                            }
+                          });
+                        }
+                      }
+                    })
+                </script>
             </div>
         </div>
     </div>
@@ -1265,67 +1821,442 @@
 
 
 
-            <div data-silex-type="image" class="editable-style silex-id-1498777946113-25 image-element" data-silex-id="silex-id-1498777946113-25">
-                <a href="res/img/design/microarch/fisc_stage2_decode.png"><img src="assets/fisc_stage2_decode_resized.jpg" class="silex-element-content"></a>
-            </div>
-            <div data-silex-type="text" class="editable-style text-element silex-id-1498777915202-23" data-silex-id="silex-id-1498777915202-23">
-                <div class="silex-element-content normal">
-                    <font color="#444444" size="6">Second pipeline stage: <b>Decode</b></font>
-                </div>
-            </div>
 
 
 
 
 
-            <div data-silex-type="image" class="editable-style silex-id-1498778044568-27 image-element" data-silex-id="silex-id-1498778044568-27">
-                <a href="res/img/design/microarch/fisc_stage3_execute.png"><img src="assets/fisc_stage3_execute_resized.jpg" class="silex-element-content"></a>
-            </div>
-            <div data-silex-type="text" class="editable-style text-element silex-id-1498777976778-26" data-silex-id="silex-id-1498777976778-26">
-                <div class="silex-element-content normal">
-                    <font color="#444444" size="6">Third pipeline stage: <b>Execute</b></font>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div data-silex-type="container" class="editable-style container-element silex-component silex-component-animated-container silex-id-1498795514831-29 page-home paged-element" data-silex-id="silex-id-1498795514831-29">
+                <div id="id_1498795514838_757"></div>
+                <script type="text/javascript">
+                    /*
+                    animation widget from here: https://github.com/silexlabs/Silex/issues/443
+                    */
+                    $(function() {
+                      var bodyEl = $('body');
+                      // execute only outside silex editor
+                      if(!bodyEl.hasClass('silex-runtime')) return;
+                      // init ScrollReveal lib
+                      window.sr = window.sr || ScrollReveal();
+                      // animate this element on page change
+                      bodyEl.on('pageChanged', animate_1498795514838_757);
+                      // animate this element at start
+                      animate_1498795514838_757();
+                      // the function to start the animation
+                      function animate_1498795514838_757 (event, pageName) {
+                        // get the silex element in which we are
+                        var silexElement = $('#id_1498795514838_757').parent();
+                        if(// only if the element is in the dom
+                          silexElement &&
+                          // and is visible in the current page
+                          (silexElement.hasClass(bodyEl.pageable('option').currentPage) ||
+                          // or visible in all pages
+                          !silexElement.hasClass('paged-element')) &&
+                          // but never in mobile mode
+                          (!bodyEl.hasClass('enable-mobile') || $(window).width() >= 480)) {
+                          // use ScrollReveal API
+                          sr.reveal(silexElement, {
+                            origin:  'left',
+                            distance: '20px',
+                            duration: 500,
+                            delay: 0,
+                            rotate: { x: 0, y: 0, z: 0 },
+                            opacity: 0,
+                            scale: 1,
+                            easing: 'linear',
+                            reset: false,
+                            beforeReveal: function(el){
+                              
+                            },
+                            beforeReset: function(el){
+                              
+                            },
+                            afterReveal: function(el){
+                              
+                            },
+                            afterReset: function(el){
+                              
+                            }
+                          });
+                        }
+                      }
+                    })
+                </script>
+
+
+
+                <div data-silex-type="image" class="editable-style silex-id-1498777470672-20 image-element" data-silex-id="silex-id-1498777470672-20">
+                    <a href="res/img/design/microarch/fisc.png"><img src="assets/fisc_resized3.jpg" class="silex-element-content"></a>
+                </div>
+
+                <div data-silex-type="text" class="editable-style text-element silex-id-1498771827098-25" data-silex-id="silex-id-1498771827098-25">
+                    <div class="silex-element-content normal">
+                        <h2 class="heading2">
+                            <font color="#000000">The Microarchitecture</font>
+                        </h2>
+                    </div>
+                </div>
+                <div data-silex-type="text" class="editable-style text-element silex-id-1498777246881-16" data-silex-id="silex-id-1498777246881-16">
+                    <div class="silex-element-content normal">
+                        <font color="#444444" size="6">High level design of the Microarchitecture</font>
+                    </div>
                 </div>
             </div>
-            <div data-silex-type="text" class="editable-style text-element silex-id-1498778062768-28" data-silex-id="silex-id-1498778062768-28">
-                <div class="silex-element-content normal">
-                    <font color="#444444" size="6">Fourth pipeline stage: <b>Memory Access</b></font>
+            <div data-silex-type="container" class="editable-style container-element silex-component silex-component-animated-container silex-id-1498795755878-38 page-home paged-element" data-silex-id="silex-id-1498795755878-38">
+                <div id="id_1498795755882_936"></div>
+                <script type="text/javascript">
+                    /*
+                    animation widget from here: https://github.com/silexlabs/Silex/issues/443
+                    */
+                    $(function() {
+                      var bodyEl = $('body');
+                      // execute only outside silex editor
+                      if(!bodyEl.hasClass('silex-runtime')) return;
+                      // init ScrollReveal lib
+                      window.sr = window.sr || ScrollReveal();
+                      // animate this element on page change
+                      bodyEl.on('pageChanged', animate_1498795755882_936);
+                      // animate this element at start
+                      animate_1498795755882_936();
+                      // the function to start the animation
+                      function animate_1498795755882_936 (event, pageName) {
+                        // get the silex element in which we are
+                        var silexElement = $('#id_1498795755882_936').parent();
+                        if(// only if the element is in the dom
+                          silexElement &&
+                          // and is visible in the current page
+                          (silexElement.hasClass(bodyEl.pageable('option').currentPage) ||
+                          // or visible in all pages
+                          !silexElement.hasClass('paged-element')) &&
+                          // but never in mobile mode
+                          (!bodyEl.hasClass('enable-mobile') || $(window).width() >= 480)) {
+                          // use ScrollReveal API
+                          sr.reveal(silexElement, {
+                            origin:  'left',
+                            distance: '20px',
+                            duration: 500,
+                            delay: 0,
+                            rotate: { x: 0, y: 0, z: 0 },
+                            opacity: 0,
+                            scale: 1,
+                            easing: 'linear',
+                            reset: false,
+                            beforeReveal: function(el){
+                              
+                            },
+                            beforeReset: function(el){
+                              
+                            },
+                            afterReveal: function(el){
+                              
+                            },
+                            afterReset: function(el){
+                              
+                            }
+                          });
+                        }
+                      }
+                    })
+                </script>
+                <div data-silex-type="text" class="editable-style text-element silex-id-1498777775562-21" data-silex-id="silex-id-1498777775562-21">
+                    <div class="silex-element-content normal">
+                        <font color="#444444" size="6">First pipeline stage: <b>Fetch</b></font>
+                    </div>
+                </div>
+                <div data-silex-type="image" class="editable-style silex-id-1498777853767-22 image-element" data-silex-id="silex-id-1498777853767-22">
+                    <a href="res/img/design/microarch/fisc_stage1_fetch.png"><img src="assets/fisc_stage1_fetch_resized.jpg" class="silex-element-content"></a>
                 </div>
             </div>
-            <div data-silex-type="image" class="editable-style silex-id-1498778115454-29 image-element" data-silex-id="silex-id-1498778115454-29">
-                <a href="res/img/design/microarch/fisc_stage4_memaccess.png"><img src="assets/fisc_stage4_memaccess_resized.jpg" class="silex-element-content"></a>
-            </div>
-            <div data-silex-type="image" class="editable-style silex-id-1498779248370-1 image-element" data-silex-id="silex-id-1498779248370-1">
-                <a href="res/img/design/microarch/fisc_stage5_writeback.png"><img src="assets/fisc_stage5_writeback_resized5.jpg" class="silex-element-content"></a>
-            </div>
-            <div data-silex-type="text" class="editable-style text-element silex-id-1498778177146-30" data-silex-id="silex-id-1498778177146-30">
-                <div class="silex-element-content normal">
-                    <font color="#444444" size="6">Fifth and last pipeline stage: <b>Writeback</b></font>
+
+
+            <div data-silex-type="container" class="editable-style container-element silex-component silex-component-animated-container silex-id-1498795965695-42 page-home paged-element" data-silex-id="silex-id-1498795965695-42">
+                <div id="id_1498795965699_182"></div>
+                <script type="text/javascript">
+                    /*
+                    animation widget from here: https://github.com/silexlabs/Silex/issues/443
+                    */
+                    $(function() {
+                      var bodyEl = $('body');
+                      // execute only outside silex editor
+                      if(!bodyEl.hasClass('silex-runtime')) return;
+                      // init ScrollReveal lib
+                      window.sr = window.sr || ScrollReveal();
+                      // animate this element on page change
+                      bodyEl.on('pageChanged', animate_1498795965699_182);
+                      // animate this element at start
+                      animate_1498795965699_182();
+                      // the function to start the animation
+                      function animate_1498795965699_182 (event, pageName) {
+                        // get the silex element in which we are
+                        var silexElement = $('#id_1498795965699_182').parent();
+                        if(// only if the element is in the dom
+                          silexElement &&
+                          // and is visible in the current page
+                          (silexElement.hasClass(bodyEl.pageable('option').currentPage) ||
+                          // or visible in all pages
+                          !silexElement.hasClass('paged-element')) &&
+                          // but never in mobile mode
+                          (!bodyEl.hasClass('enable-mobile') || $(window).width() >= 480)) {
+                          // use ScrollReveal API
+                          sr.reveal(silexElement, {
+                            origin:  'left',
+                            distance: '20px',
+                            duration: 500,
+                            delay: 0,
+                            rotate: { x: 0, y: 0, z: 0 },
+                            opacity: 0,
+                            scale: 1,
+                            easing: 'linear',
+                            reset: false,
+                            beforeReveal: function(el){
+                              
+                            },
+                            beforeReset: function(el){
+                              
+                            },
+                            afterReveal: function(el){
+                              
+                            },
+                            afterReset: function(el){
+                              
+                            }
+                          });
+                        }
+                      }
+                    })
+                </script>
+                <div data-silex-type="text" class="editable-style text-element silex-id-1498777915202-23" data-silex-id="silex-id-1498777915202-23">
+                    <div class="silex-element-content normal">
+                        <font color="#444444" size="6">Second pipeline stage: <b>Decode</b></font>
+                    </div>
+                </div>
+                <div data-silex-type="image" class="editable-style silex-id-1498777946113-25 image-element" data-silex-id="silex-id-1498777946113-25">
+                    <a href="res/img/design/microarch/fisc_stage2_decode.png"><img src="assets/fisc_stage2_decode_resized.jpg" class="silex-element-content"></a>
                 </div>
             </div>
-            <div data-silex-type="text" class="editable-style text-element silex-id-1498771827098-25" data-silex-id="silex-id-1498771827098-25">
-                <div class="silex-element-content normal">
-                    <h2 class="heading2">
-                        <font color="#000000">The Microarchitecture</font>
-                    </h2>
+
+            <div data-silex-type="container" class="editable-style container-element silex-component silex-component-animated-container silex-id-1498796054472-45 page-home paged-element" data-silex-id="silex-id-1498796054472-45">
+                <div id="id_1498796054475_496"></div>
+                <script type="text/javascript">
+                    /*
+                        animation widget from here: https://github.com/silexlabs/Silex/issues/443
+                        */
+                        $(function() {
+                          var bodyEl = $('body');
+                          // execute only outside silex editor
+                          if(!bodyEl.hasClass('silex-runtime')) return;
+                          // init ScrollReveal lib
+                          window.sr = window.sr || ScrollReveal();
+                          // animate this element on page change
+                          bodyEl.on('pageChanged', animate_1498796054475_496);
+                          // animate this element at start
+                          animate_1498796054475_496();
+                          // the function to start the animation
+                          function animate_1498796054475_496 (event, pageName) {
+                            // get the silex element in which we are
+                            var silexElement = $('#id_1498796054475_496').parent();
+                            if(// only if the element is in the dom
+                              silexElement &&
+                              // and is visible in the current page
+                              (silexElement.hasClass(bodyEl.pageable('option').currentPage) ||
+                              // or visible in all pages
+                              !silexElement.hasClass('paged-element')) &&
+                              // but never in mobile mode
+                              (!bodyEl.hasClass('enable-mobile') || $(window).width() >= 480)) {
+                              // use ScrollReveal API
+                              sr.reveal(silexElement, {
+                                origin:  'left',
+                                distance: '20px',
+                                duration: 500,
+                                delay: 0,
+                                rotate: { x: 0, y: 0, z: 0 },
+                                opacity: 0,
+                                scale: 1,
+                                easing: 'linear',
+                                reset: false,
+                                beforeReveal: function(el){
+                                  
+                                },
+                                beforeReset: function(el){
+                                  
+                                },
+                                afterReveal: function(el){
+                                  
+                                },
+                                afterReset: function(el){
+                                  
+                                }
+                              });
+                            }
+                          }
+                        })
+                </script>
+
+
+
+                <div data-silex-type="text" class="editable-style text-element silex-id-1498777976778-26" data-silex-id="silex-id-1498777976778-26">
+                    <div class="silex-element-content normal">
+                        <font color="#444444" size="6">Third pipeline stage: <b>Execute</b></font>
+                    </div>
+                </div>
+                <div data-silex-type="image" class="editable-style silex-id-1498778044568-27 image-element" data-silex-id="silex-id-1498778044568-27">
+                    <a href="res/img/design/microarch/fisc_stage3_execute.png"><img src="assets/fisc_stage3_execute_resized.jpg" class="silex-element-content"></a>
                 </div>
             </div>
-            <div data-silex-type="text" class="editable-style text-element silex-id-1498777246881-16" data-silex-id="silex-id-1498777246881-16">
-                <div class="silex-element-content normal">
-                    <font color="#444444" size="6">High level design of the Microarchitecture</font>
+            <div data-silex-type="container" class="editable-style container-element silex-component silex-component-animated-container silex-id-1498796101430-48 page-home paged-element" data-silex-id="silex-id-1498796101430-48">
+                <div id="id_1498796101432_892"></div>
+                <script type="text/javascript">
+                    /*
+                    animation widget from here: https://github.com/silexlabs/Silex/issues/443
+                    */
+                    $(function() {
+                      var bodyEl = $('body');
+                      // execute only outside silex editor
+                      if(!bodyEl.hasClass('silex-runtime')) return;
+                      // init ScrollReveal lib
+                      window.sr = window.sr || ScrollReveal();
+                      // animate this element on page change
+                      bodyEl.on('pageChanged', animate_1498796101432_892);
+                      // animate this element at start
+                      animate_1498796101432_892();
+                      // the function to start the animation
+                      function animate_1498796101432_892 (event, pageName) {
+                        // get the silex element in which we are
+                        var silexElement = $('#id_1498796101432_892').parent();
+                        if(// only if the element is in the dom
+                          silexElement &&
+                          // and is visible in the current page
+                          (silexElement.hasClass(bodyEl.pageable('option').currentPage) ||
+                          // or visible in all pages
+                          !silexElement.hasClass('paged-element')) &&
+                          // but never in mobile mode
+                          (!bodyEl.hasClass('enable-mobile') || $(window).width() >= 480)) {
+                          // use ScrollReveal API
+                          sr.reveal(silexElement, {
+                            origin:  'left',
+                            distance: '20px',
+                            duration: 500,
+                            delay: 0,
+                            rotate: { x: 0, y: 0, z: 0 },
+                            opacity: 0,
+                            scale: 1,
+                            easing: 'linear',
+                            reset: false,
+                            beforeReveal: function(el){
+                              
+                            },
+                            beforeReset: function(el){
+                              
+                            },
+                            afterReveal: function(el){
+                              
+                            },
+                            afterReset: function(el){
+                              
+                            }
+                          });
+                        }
+                      }
+                    })
+                </script>
+
+
+                <div data-silex-type="image" class="editable-style silex-id-1498778115454-29 image-element" data-silex-id="silex-id-1498778115454-29">
+                    <a href="res/img/design/microarch/fisc_stage4_memaccess.png"><img src="assets/fisc_stage4_memaccess_resized.jpg" class="silex-element-content"></a>
+                </div>
+                <div data-silex-type="text" class="editable-style text-element silex-id-1498778062768-28" data-silex-id="silex-id-1498778062768-28">
+                    <div class="silex-element-content normal">
+                        <font color="#444444" size="6">Fourth pipeline stage: <b>Memory Access</b></font>
+                    </div>
                 </div>
             </div>
-            <div data-silex-type="image" class="editable-style silex-id-1498777470672-20 image-element" data-silex-id="silex-id-1498777470672-20">
-                <a href="res/img/design/microarch/fisc.png"><img src="assets/fisc_resized3.jpg" class="silex-element-content"></a>
-            </div>
-            <div data-silex-type="text" class="editable-style text-element silex-id-1498777775562-21" data-silex-id="silex-id-1498777775562-21">
-                <div class="silex-element-content normal">
-                    <font color="#444444" size="6">First pipeline stage: <b>Fetch</b></font>
+            <div data-silex-type="container" class="editable-style container-element silex-component silex-component-animated-container silex-id-1498796247007-51 page-home paged-element" data-silex-id="silex-id-1498796247007-51">
+                <div id="id_1498796247011_391"></div>
+                <script type="text/javascript">
+                    /*
+                    animation widget from here: https://github.com/silexlabs/Silex/issues/443
+                    */
+                    $(function() {
+                      var bodyEl = $('body');
+                      // execute only outside silex editor
+                      if(!bodyEl.hasClass('silex-runtime')) return;
+                      // init ScrollReveal lib
+                      window.sr = window.sr || ScrollReveal();
+                      // animate this element on page change
+                      bodyEl.on('pageChanged', animate_1498796247011_391);
+                      // animate this element at start
+                      animate_1498796247011_391();
+                      // the function to start the animation
+                      function animate_1498796247011_391 (event, pageName) {
+                        // get the silex element in which we are
+                        var silexElement = $('#id_1498796247011_391').parent();
+                        if(// only if the element is in the dom
+                          silexElement &&
+                          // and is visible in the current page
+                          (silexElement.hasClass(bodyEl.pageable('option').currentPage) ||
+                          // or visible in all pages
+                          !silexElement.hasClass('paged-element')) &&
+                          // but never in mobile mode
+                          (!bodyEl.hasClass('enable-mobile') || $(window).width() >= 480)) {
+                          // use ScrollReveal API
+                          sr.reveal(silexElement, {
+                            origin:  'left',
+                            distance: '20px',
+                            duration: 500,
+                            delay: 0,
+                            rotate: { x: 0, y: 0, z: 0 },
+                            opacity: 0,
+                            scale: 1,
+                            easing: 'linear',
+                            reset: false,
+                            beforeReveal: function(el){
+                              
+                            },
+                            beforeReset: function(el){
+                              
+                            },
+                            afterReveal: function(el){
+                              
+                            },
+                            afterReset: function(el){
+                              
+                            }
+                          });
+                        }
+                      }
+                    })
+                </script>
+                <div data-silex-type="image" class="editable-style silex-id-1498779248370-1 image-element" data-silex-id="silex-id-1498779248370-1">
+                    <a href="res/img/design/microarch/fisc_stage5_writeback.png"><img src="assets/fisc_stage5_writeback_resized5.jpg" class="silex-element-content"></a>
                 </div>
-            </div>
-            <div data-silex-type="image" class="editable-style silex-id-1498777853767-22 image-element" data-silex-id="silex-id-1498777853767-22">
-                <a href="res/img/design/microarch/fisc_stage1_fetch.png"><img src="assets/fisc_stage1_fetch_resized.jpg" class="silex-element-content"></a>
+
+
+                <div data-silex-type="text" class="editable-style text-element silex-id-1498778177146-30" data-silex-id="silex-id-1498778177146-30">
+                    <div class="silex-element-content normal">
+                        <font color="#444444" size="6">Fifth and last pipeline stage: <b>Writeback</b></font>
+                    </div>
+                </div>
             </div>
         </div>
+
+
+
+
+
+
     </div>
 
     <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1498778407345-35 section-element" data-silex-id="silex-id-1498778407345-35">
@@ -1335,107 +2266,587 @@
     <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1498771620207-11 section-element theprojects" data-silex-id="silex-id-1498771620207-11">
         <div data-silex-type="container" class="editable-style silex-id-1498771620206-10 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1498771620206-10">
 
-            <div data-silex-type="text" class="editable-style text-element silex-id-1498771851081-26" data-silex-id="silex-id-1498771851081-26">
-                <div class="silex-element-content normal">
-                    <h2 class="heading2">
-                        <font color="#000000">The Projects</font>
-                    </h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div data-silex-type="container" class="editable-style container-element silex-component silex-component-animated-container silex-id-1498796813942-54 page-home paged-element" data-silex-id="silex-id-1498796813942-54">
+                <div id="id_1498798622582_450"></div>
+                <script type="text/javascript">
+                    /*
+                    animation widget from here: https://github.com/silexlabs/Silex/issues/443
+                    */
+                    $(function() {
+                      var bodyEl = $('body');
+                      // execute only outside silex editor
+                      if(!bodyEl.hasClass('silex-runtime')) return;
+                      // init ScrollReveal lib
+                      window.sr = window.sr || ScrollReveal();
+                      // animate this element on page change
+                      bodyEl.on('pageChanged', animate_1498798622582_450);
+                      // animate this element at start
+                      animate_1498798622582_450();
+                      // the function to start the animation
+                      function animate_1498798622582_450 (event, pageName) {
+                        // get the silex element in which we are
+                        var silexElement = $('#id_1498798622582_450').parent();
+                        if(// only if the element is in the dom
+                          silexElement &&
+                          // and is visible in the current page
+                          (silexElement.hasClass(bodyEl.pageable('option').currentPage) ||
+                          // or visible in all pages
+                          !silexElement.hasClass('paged-element')) &&
+                          // but never in mobile mode
+                          (!bodyEl.hasClass('enable-mobile') || $(window).width() >= 480)) {
+                          // use ScrollReveal API
+                          sr.reveal(silexElement, {
+                            origin:  'top',
+                            distance: '20px',
+                            duration: 500,
+                            delay: 0,
+                            rotate: { x: 0, y: 0, z: 0 },
+                            opacity: 0,
+                            scale: 1,
+                            easing: 'linear',
+                            reset: false,
+                            beforeReveal: function(el){
+                              
+                            },
+                            beforeReset: function(el){
+                              
+                            },
+                            afterReveal: function(el){
+                              
+                            },
+                            afterReset: function(el){
+                              
+                            }
+                          });
+                        }
+                      }
+                    })
+                </script>
+                <div data-silex-type="image" class="editable-style silex-id-1498782057889-6 image-element" data-silex-id="silex-id-1498782057889-6"><img src="assets/fisc_logo_design_resized2.jpg" class="silex-element-content"></div>
+                <div data-silex-type="text" class="editable-style silex-id-1498783544545-15 text-element" data-silex-id="silex-id-1498783544545-15">
+                    <div class="silex-element-content normal">
+                        <font color="#444444" size="4">The design of the CPU architecture itself.</font>
+                    </div>
                 </div>
             </div>
-            <div data-silex-type="text" class="editable-style text-element silex-id-1498781390330-4" data-silex-id="silex-id-1498781390330-4">
-                <div class="silex-element-content normal">
-                    <font color="#444444">
-                        <font size="4">FISC is composed of the following independent subprojects.&nbsp;</font><b><font size="2">(click on the GitHub and FISC logos to access both project pages)</font></b></font>
+            <div data-silex-type="container" class="editable-style container-element silex-component silex-component-animated-container silex-id-1498796858654-57 page-home paged-element" data-silex-id="silex-id-1498796858654-57">
+                <div id="id_1498798377709_56"></div>
+                <script type="text/javascript">
+                    /*
+                    animation widget from here: https://github.com/silexlabs/Silex/issues/443
+                    */
+                    $(function() {
+                      var bodyEl = $('body');
+                      // execute only outside silex editor
+                      if(!bodyEl.hasClass('silex-runtime')) return;
+                      // init ScrollReveal lib
+                      window.sr = window.sr || ScrollReveal();
+                      // animate this element on page change
+                      bodyEl.on('pageChanged', animate_1498798377709_56);
+                      // animate this element at start
+                      animate_1498798377709_56();
+                      // the function to start the animation
+                      function animate_1498798377709_56 (event, pageName) {
+                        // get the silex element in which we are
+                        var silexElement = $('#id_1498798377709_56').parent();
+                        if(// only if the element is in the dom
+                          silexElement &&
+                          // and is visible in the current page
+                          (silexElement.hasClass(bodyEl.pageable('option').currentPage) ||
+                          // or visible in all pages
+                          !silexElement.hasClass('paged-element')) &&
+                          // but never in mobile mode
+                          (!bodyEl.hasClass('enable-mobile') || $(window).width() >= 480)) {
+                          // use ScrollReveal API
+                          sr.reveal(silexElement, {
+                            origin:  'top',
+                            distance: '20px',
+                            duration: 500,
+                            delay: 0,
+                            rotate: { x: 0, y: 0, z: 0 },
+                            opacity: 0,
+                            scale: 1,
+                            easing: 'linear',
+                            reset: false,
+                            beforeReveal: function(el){
+                              
+                            },
+                            beforeReset: function(el){
+                              
+                            },
+                            afterReveal: function(el){
+                              
+                            },
+                            afterReset: function(el){
+                              
+                            }
+                          });
+                        }
+                      }
+                    })
+                </script>
+                <div data-silex-type="image" class="editable-style silex-id-1498782230819-7 image-element" data-silex-id="silex-id-1498782230819-7"><img src="assets/fisc_logo_vhdl_resized.jpg" class="silex-element-content"></div>
+                <div data-silex-type="image" class="editable-style image-element silex-id-1498790128151-3" data-silex-id="silex-id-1498790128151-3">
+                    <a href="https://github.com/FISC-Project/FISC-VHDL"><img src="assets/githublogo.png" class="silex-element-content"></a>
+                </div>
+                <div data-silex-type="text" class="editable-style text-element silex-id-1498783600140-17" data-silex-id="silex-id-1498783600140-17">
+                    <div class="silex-element-content normal">
+                        <font color="#444444" size="4">A VHDL implementation of FISC.</font>
+                    </div>
+                </div>
+            </div>
+            <div data-silex-type="container" class="editable-style container-element silex-component silex-component-animated-container silex-id-1498796997309-59 page-home paged-element" data-silex-id="silex-id-1498796997309-59">
+                <div id="id_1498798404031_567"></div>
+                <script type="text/javascript">
+                    /*
+                    animation widget from here: https://github.com/silexlabs/Silex/issues/443
+                    */
+                    $(function() {
+                      var bodyEl = $('body');
+                      // execute only outside silex editor
+                      if(!bodyEl.hasClass('silex-runtime')) return;
+                      // init ScrollReveal lib
+                      window.sr = window.sr || ScrollReveal();
+                      // animate this element on page change
+                      bodyEl.on('pageChanged', animate_1498798404031_567);
+                      // animate this element at start
+                      animate_1498798404031_567();
+                      // the function to start the animation
+                      function animate_1498798404031_567 (event, pageName) {
+                        // get the silex element in which we are
+                        var silexElement = $('#id_1498798404031_567').parent();
+                        if(// only if the element is in the dom
+                          silexElement &&
+                          // and is visible in the current page
+                          (silexElement.hasClass(bodyEl.pageable('option').currentPage) ||
+                          // or visible in all pages
+                          !silexElement.hasClass('paged-element')) &&
+                          // but never in mobile mode
+                          (!bodyEl.hasClass('enable-mobile') || $(window).width() >= 480)) {
+                          // use ScrollReveal API
+                          sr.reveal(silexElement, {
+                            origin:  'top',
+                            distance: '20px',
+                            duration: 500,
+                            delay: 0,
+                            rotate: { x: 0, y: 0, z: 0 },
+                            opacity: 0,
+                            scale: 1,
+                            easing: 'linear',
+                            reset: false,
+                            beforeReveal: function(el){
+                              
+                            },
+                            beforeReset: function(el){
+                              
+                            },
+                            afterReveal: function(el){
+                              
+                            },
+                            afterReset: function(el){
+                              
+                            }
+                          });
+                        }
+                      }
+                    })
+                </script>
+                <div data-silex-type="text" class="editable-style text-element silex-id-1498783598211-16" data-silex-id="silex-id-1498783598211-16">
+                    <div class="silex-element-content normal">
+                        <font color="#444444" size="4">A C++ Windows / Linux program that emulates the CPU.</font>
+                    </div>
+                </div>
+                <div data-silex-type="image" class="editable-style silex-id-1498782356029-8 image-element" data-silex-id="silex-id-1498782356029-8"><img src="assets/fisc_logo_virtualmachine_resized.jpg" class="silex-element-content"></div>
+                <div data-silex-type="image" class="editable-style image-element silex-id-1498790137046-4" data-silex-id="silex-id-1498790137046-4">
+                    <a href="https://github.com/FISC-Project/FISC-VM"><img src="assets/githublogo.png" class="silex-element-content"></a>
                 </div>
             </div>
 
-
-
-
-            <div data-silex-type="image" class="editable-style silex-id-1498782057889-6 image-element" data-silex-id="silex-id-1498782057889-6"><img src="assets/fisc_logo_design_resized2.jpg" class="silex-element-content"></div>
-            <div data-silex-type="image" class="editable-style silex-id-1498782230819-7 image-element" data-silex-id="silex-id-1498782230819-7"><img src="assets/fisc_logo_vhdl_resized.jpg" class="silex-element-content"></div>
-            <div data-silex-type="image" class="editable-style silex-id-1498782356029-8 image-element" data-silex-id="silex-id-1498782356029-8"><img src="assets/fisc_logo_virtualmachine_resized.jpg" class="silex-element-content"></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <div data-silex-type="image" class="editable-style silex-id-1498782492174-9 image-element" data-silex-id="silex-id-1498782492174-9"><img src="assets/fisc_logo_llvm_resized.jpg" class="silex-element-content"></div>
-            <div data-silex-type="image" class="editable-style silex-id-1498782855078-10 image-element" data-silex-id="silex-id-1498782855078-10"><img src="assets/fisc_logo_standalone_resized.jpg" class="silex-element-content"></div>
-            <div data-silex-type="image" class="editable-style silex-id-1498783155293-11 image-element" data-silex-id="silex-id-1498783155293-11"><img src="assets/fisc_logo_testbench_resized.jpg" class="silex-element-content"></div>
-            <div data-silex-type="image" class="editable-style silex-id-1498783501304-14 image-element" data-silex-id="silex-id-1498783501304-14"><img src="assets/fisc_logo_os_resized.jpg" class="silex-element-content"></div>
-            <div data-silex-type="text" class="editable-style text-element silex-id-1498783271225-12" data-silex-id="silex-id-1498783271225-12">
-                <div class="silex-element-content normal">
-                    <font color="#444444" size="6">Future projects</font>
+            <div data-silex-type="container" class="editable-style container-element silex-component silex-component-animated-container silex-id-1498797098615-63 page-home paged-element" data-silex-id="silex-id-1498797098615-63">
+                <div id="id_1498798418339_414"></div>
+                <script type="text/javascript">
+                    /*
+                    animation widget from here: https://github.com/silexlabs/Silex/issues/443
+                    */
+                    $(function() {
+                      var bodyEl = $('body');
+                      // execute only outside silex editor
+                      if(!bodyEl.hasClass('silex-runtime')) return;
+                      // init ScrollReveal lib
+                      window.sr = window.sr || ScrollReveal();
+                      // animate this element on page change
+                      bodyEl.on('pageChanged', animate_1498798418339_414);
+                      // animate this element at start
+                      animate_1498798418339_414();
+                      // the function to start the animation
+                      function animate_1498798418339_414 (event, pageName) {
+                        // get the silex element in which we are
+                        var silexElement = $('#id_1498798418339_414').parent();
+                        if(// only if the element is in the dom
+                          silexElement &&
+                          // and is visible in the current page
+                          (silexElement.hasClass(bodyEl.pageable('option').currentPage) ||
+                          // or visible in all pages
+                          !silexElement.hasClass('paged-element')) &&
+                          // but never in mobile mode
+                          (!bodyEl.hasClass('enable-mobile') || $(window).width() >= 480)) {
+                          // use ScrollReveal API
+                          sr.reveal(silexElement, {
+                            origin:  'top',
+                            distance: '20px',
+                            duration: 500,
+                            delay: 0,
+                            rotate: { x: 0, y: 0, z: 0 },
+                            opacity: 0,
+                            scale: 1,
+                            easing: 'linear',
+                            reset: false,
+                            beforeReveal: function(el){
+                              
+                            },
+                            beforeReset: function(el){
+                              
+                            },
+                            afterReveal: function(el){
+                              
+                            },
+                            afterReset: function(el){
+                              
+                            }
+                          });
+                        }
+                      }
+                    })
+                </script>
+                <div data-silex-type="text" class="editable-style text-element silex-id-1498783727561-19" data-silex-id="silex-id-1498783727561-19">
+                    <div class="silex-element-content normal">
+                        <font color="#444444" size="4">An LLVM compiler backend that generates machine code for the FISC CPU.</font>
+                    </div>
+                </div>
+                <div data-silex-type="image" class="editable-style image-element silex-id-1498790140385-5" data-silex-id="silex-id-1498790140385-5">
+                    <a href="https://github.com/FISC-Project/FISC-LLVM"><img src="assets/githublogo.png" class="silex-element-content"></a>
+                </div>
+                <div data-silex-type="image" class="editable-style silex-id-1498782492174-9 image-element" data-silex-id="silex-id-1498782492174-9"><img src="assets/fisc_logo_llvm_resized.jpg" class="silex-element-content"></div>
+            </div>
+            <div data-silex-type="container" class="editable-style container-element silex-component silex-component-animated-container silex-id-1498797241631-66 page-home paged-element" data-silex-id="silex-id-1498797241631-66">
+                <div id="id_1498798422079_226"></div>
+                <script type="text/javascript">
+                    /*
+                    animation widget from here: https://github.com/silexlabs/Silex/issues/443
+                    */
+                    $(function() {
+                      var bodyEl = $('body');
+                      // execute only outside silex editor
+                      if(!bodyEl.hasClass('silex-runtime')) return;
+                      // init ScrollReveal lib
+                      window.sr = window.sr || ScrollReveal();
+                      // animate this element on page change
+                      bodyEl.on('pageChanged', animate_1498798422079_226);
+                      // animate this element at start
+                      animate_1498798422079_226();
+                      // the function to start the animation
+                      function animate_1498798422079_226 (event, pageName) {
+                        // get the silex element in which we are
+                        var silexElement = $('#id_1498798422079_226').parent();
+                        if(// only if the element is in the dom
+                          silexElement &&
+                          // and is visible in the current page
+                          (silexElement.hasClass(bodyEl.pageable('option').currentPage) ||
+                          // or visible in all pages
+                          !silexElement.hasClass('paged-element')) &&
+                          // but never in mobile mode
+                          (!bodyEl.hasClass('enable-mobile') || $(window).width() >= 480)) {
+                          // use ScrollReveal API
+                          sr.reveal(silexElement, {
+                            origin:  'top',
+                            distance: '20px',
+                            duration: 500,
+                            delay: 0,
+                            rotate: { x: 0, y: 0, z: 0 },
+                            opacity: 0,
+                            scale: 1,
+                            easing: 'linear',
+                            reset: false,
+                            beforeReveal: function(el){
+                              
+                            },
+                            beforeReset: function(el){
+                              
+                            },
+                            afterReveal: function(el){
+                              
+                            },
+                            afterReset: function(el){
+                              
+                            }
+                          });
+                        }
+                      }
+                    })
+                </script>
+                <div data-silex-type="text" class="editable-style text-element silex-id-1498783674851-18" data-silex-id="silex-id-1498783674851-18">
+                    <div class="silex-element-content normal">
+                        <font color="#444444" size="4">A set of important tools used for all implementations that are not related to LLVM, i.e. basic Assembler, Debugger, etc.</font>
+                    </div>
+                </div>
+                <div data-silex-type="image" class="editable-style image-element silex-id-1498790151247-6" data-silex-id="silex-id-1498790151247-6">
+                    <a href="https://github.com/FISC-Project/FISC-Standalone-Tools"><img src="assets/githublogo.png" class="silex-element-content"></a>
+                </div>
+                <div data-silex-type="image" class="editable-style silex-id-1498782855078-10 image-element" data-silex-id="silex-id-1498782855078-10"><img src="assets/fisc_logo_standalone_resized.jpg" class="silex-element-content"></div>
+            </div>
+            <div data-silex-type="container" class="editable-style container-element silex-component silex-component-animated-container silex-id-1498797395101-70 page-home paged-element" data-silex-id="silex-id-1498797395101-70">
+                <div id="id_1498798425997_742"></div>
+                <script type="text/javascript">
+                    /*
+                    animation widget from here: https://github.com/silexlabs/Silex/issues/443
+                    */
+                    $(function() {
+                      var bodyEl = $('body');
+                      // execute only outside silex editor
+                      if(!bodyEl.hasClass('silex-runtime')) return;
+                      // init ScrollReveal lib
+                      window.sr = window.sr || ScrollReveal();
+                      // animate this element on page change
+                      bodyEl.on('pageChanged', animate_1498798425997_742);
+                      // animate this element at start
+                      animate_1498798425997_742();
+                      // the function to start the animation
+                      function animate_1498798425997_742 (event, pageName) {
+                        // get the silex element in which we are
+                        var silexElement = $('#id_1498798425997_742').parent();
+                        if(// only if the element is in the dom
+                          silexElement &&
+                          // and is visible in the current page
+                          (silexElement.hasClass(bodyEl.pageable('option').currentPage) ||
+                          // or visible in all pages
+                          !silexElement.hasClass('paged-element')) &&
+                          // but never in mobile mode
+                          (!bodyEl.hasClass('enable-mobile') || $(window).width() >= 480)) {
+                          // use ScrollReveal API
+                          sr.reveal(silexElement, {
+                            origin:  'top',
+                            distance: '20px',
+                            duration: 500,
+                            delay: 0,
+                            rotate: { x: 0, y: 0, z: 0 },
+                            opacity: 0,
+                            scale: 1,
+                            easing: 'linear',
+                            reset: false,
+                            beforeReveal: function(el){
+                              
+                            },
+                            beforeReset: function(el){
+                              
+                            },
+                            afterReveal: function(el){
+                              
+                            },
+                            afterReset: function(el){
+                              
+                            }
+                          });
+                        }
+                      }
+                    })
+                </script>
+                <div data-silex-type="image" class="editable-style image-element silex-id-1498790152936-7" data-silex-id="silex-id-1498790152936-7">
+                    <a href="https://github.com/FISC-Project/FISC-Testbench"><img src="assets/githublogo.png" class="silex-element-content"></a>
+                </div>
+                <div data-silex-type="image" class="editable-style silex-id-1498783155293-11 image-element" data-silex-id="silex-id-1498783155293-11"><img src="assets/fisc_logo_testbench_resized.jpg" class="silex-element-content"></div>
+                <div data-silex-type="text" class="editable-style text-element silex-id-1498783784676-20" data-silex-id="silex-id-1498783784676-20">
+                    <div class="silex-element-content normal">
+                        <font color="#444444" size="4">A collection of programs that run on both implementations, such as benchmarks and user applications.</font>
+                    </div>
                 </div>
             </div>
-            <div data-silex-type="image" class="editable-style silex-id-1498783490271-13 image-element" data-silex-id="silex-id-1498783490271-13"><img src="assets/fisc_logo_kernel_resized.jpg" class="silex-element-content"></div>
-            <div data-silex-type="image" class="editable-style image-element silex-id-1498790140385-5 page-home paged-element" data-silex-id="silex-id-1498790140385-5">
-                <a href="https://github.com/FISC-Project/FISC-LLVM"><img src="assets/githublogo.png" class="silex-element-content"></a>
-            </div>
-            <div data-silex-type="image" class="editable-style image-element silex-id-1498790152936-7 page-home paged-element" data-silex-id="silex-id-1498790152936-7">
-                <a href="https://github.com/FISC-Project/FISC-Testbench"><img src="assets/githublogo.png" class="silex-element-content"></a>
-            </div>
-            <div data-silex-type="image" class="editable-style image-element silex-id-1498790151247-6 page-home paged-element" data-silex-id="silex-id-1498790151247-6">
-                <a href="https://github.com/FISC-Project/FISC-Standalone-Tools"><img src="assets/githublogo.png" class="silex-element-content"></a>
-            </div>
-            <div data-silex-type="image" class="editable-style image-element silex-id-1498790137046-4 page-home paged-element" data-silex-id="silex-id-1498790137046-4">
-                <a href="https://github.com/FISC-Project/FISC-VM"><img src="assets/githublogo.png" class="silex-element-content"></a>
-            </div>
-            <div data-silex-type="image" class="editable-style image-element silex-id-1498790128151-3 page-home paged-element" data-silex-id="silex-id-1498790128151-3">
-                <a href="https://github.com/FISC-Project/FISC-VHDL"><img src="assets/githublogo.png" class="silex-element-content"></a>
-            </div>
-
-            <div data-silex-type="text" class="editable-style text-element silex-id-1498783674851-18" data-silex-id="silex-id-1498783674851-18">
-                <div class="silex-element-content normal">
-                    <font color="#444444" size="4">A set of important tools used for all implementations that are not related to LLVM, i.e. basic Assembler, Debugger, etc.</font>
+            <div data-silex-type="container" class="editable-style container-element silex-component silex-component-animated-container silex-id-1498797482863-74 page-home paged-element" data-silex-id="silex-id-1498797482863-74">
+                <div id="id_1498798430578_762"></div>
+                <script type="text/javascript">
+                    /*
+                    animation widget from here: https://github.com/silexlabs/Silex/issues/443
+                    */
+                    $(function() {
+                      var bodyEl = $('body');
+                      // execute only outside silex editor
+                      if(!bodyEl.hasClass('silex-runtime')) return;
+                      // init ScrollReveal lib
+                      window.sr = window.sr || ScrollReveal();
+                      // animate this element on page change
+                      bodyEl.on('pageChanged', animate_1498798430578_762);
+                      // animate this element at start
+                      animate_1498798430578_762();
+                      // the function to start the animation
+                      function animate_1498798430578_762 (event, pageName) {
+                        // get the silex element in which we are
+                        var silexElement = $('#id_1498798430578_762').parent();
+                        if(// only if the element is in the dom
+                          silexElement &&
+                          // and is visible in the current page
+                          (silexElement.hasClass(bodyEl.pageable('option').currentPage) ||
+                          // or visible in all pages
+                          !silexElement.hasClass('paged-element')) &&
+                          // but never in mobile mode
+                          (!bodyEl.hasClass('enable-mobile') || $(window).width() >= 480)) {
+                          // use ScrollReveal API
+                          sr.reveal(silexElement, {
+                            origin:  'top',
+                            distance: '20px',
+                            duration: 500,
+                            delay: 0,
+                            rotate: { x: 0, y: 0, z: 0 },
+                            opacity: 0,
+                            scale: 1,
+                            easing: 'linear',
+                            reset: false,
+                            beforeReveal: function(el){
+                              
+                            },
+                            beforeReset: function(el){
+                              
+                            },
+                            afterReveal: function(el){
+                              
+                            },
+                            afterReset: function(el){
+                              
+                            }
+                          });
+                        }
+                      }
+                    })
+                </script>
+                <div data-silex-type="image" class="editable-style silex-id-1498783490271-13 image-element" data-silex-id="silex-id-1498783490271-13"><img src="assets/fisc_logo_kernel_resized.jpg" class="silex-element-content"></div>
+                <div data-silex-type="text" class="editable-style text-element silex-id-1498783271225-12" data-silex-id="silex-id-1498783271225-12">
+                    <div class="silex-element-content normal">
+                        <div style="text-align: center;"><span style="color: rgb(68, 68, 68); font-size: xx-large;">Future projects</span></div>
+                    </div>
                 </div>
+                <div data-silex-type="image" class="editable-style silex-id-1498783501304-14 image-element" data-silex-id="silex-id-1498783501304-14"><img src="assets/fisc_logo_os_resized.jpg" class="silex-element-content"></div>
             </div>
-            <div data-silex-type="text" class="editable-style text-element silex-id-1498783784676-20" data-silex-id="silex-id-1498783784676-20">
-                <div class="silex-element-content normal">
-                    <font color="#444444" size="4">A collection of programs that run on both implementations, such as benchmarks and user applications.</font>
+            <div data-silex-type="container" class="editable-style container-element silex-component silex-component-animated-container silex-id-1498797825062-82 page-home paged-element" data-silex-id="silex-id-1498797825062-82">
+                <div id="id_1498798735549_664"></div>
+                <script type="text/javascript">
+                    /*
+                    animation widget from here: https://github.com/silexlabs/Silex/issues/443
+                    */
+                    $(function() {
+                      var bodyEl = $('body');
+                      // execute only outside silex editor
+                      if(!bodyEl.hasClass('silex-runtime')) return;
+                      // init ScrollReveal lib
+                      window.sr = window.sr || ScrollReveal();
+                      // animate this element on page change
+                      bodyEl.on('pageChanged', animate_1498798735549_664);
+                      // animate this element at start
+                      animate_1498798735549_664();
+                      // the function to start the animation
+                      function animate_1498798735549_664 (event, pageName) {
+                        // get the silex element in which we are
+                        var silexElement = $('#id_1498798735549_664').parent();
+                        if(// only if the element is in the dom
+                          silexElement &&
+                          // and is visible in the current page
+                          (silexElement.hasClass(bodyEl.pageable('option').currentPage) ||
+                          // or visible in all pages
+                          !silexElement.hasClass('paged-element')) &&
+                          // but never in mobile mode
+                          (!bodyEl.hasClass('enable-mobile') || $(window).width() >= 480)) {
+                          // use ScrollReveal API
+                          sr.reveal(silexElement, {
+                            origin:  'left',
+                            distance: '20px',
+                            duration: 500,
+                            delay: 0,
+                            rotate: { x: 0, y: 0, z: 0 },
+                            opacity: 0,
+                            scale: 1,
+                            easing: 'linear',
+                            reset: false,
+                            beforeReveal: function(el){
+                              
+                            },
+                            beforeReset: function(el){
+                              
+                            },
+                            afterReveal: function(el){
+                              
+                            },
+                            afterReset: function(el){
+                              
+                            }
+                          });
+                        }
+                      }
+                    })
+                </script>
+                <div data-silex-type="text" class="editable-style text-element silex-id-1498771851081-26" data-silex-id="silex-id-1498771851081-26">
+                    <div class="silex-element-content normal">
+                        <h2 class="heading2">
+                            <font color="#000000">The Projects</font>
+                        </h2>
+                    </div>
                 </div>
-            </div>
-            <div data-silex-type="text" class="editable-style text-element silex-id-1498783598211-16" data-silex-id="silex-id-1498783598211-16">
-                <div class="silex-element-content normal">
-                    <font color="#444444" size="4">A C++ Windows / Linux program that emulates the CPU.</font>
-                </div>
-            </div>
-            <div data-silex-type="text" class="editable-style text-element silex-id-1498783600140-17" data-silex-id="silex-id-1498783600140-17">
-                <div class="silex-element-content normal">
-                    <font color="#444444" size="4">A VHDL implementation of FISC.</font>
-                </div>
-            </div>
-            <div data-silex-type="text" class="editable-style silex-id-1498783544545-15 text-element" data-silex-id="silex-id-1498783544545-15">
-                <div class="silex-element-content normal">
-                    <font color="#444444" size="4">The design of the CPU architecture itself.</font>
-                </div>
-            </div>
-            <div data-silex-type="text" class="editable-style text-element silex-id-1498783727561-19" data-silex-id="silex-id-1498783727561-19">
-                <div class="silex-element-content normal">
-                    <font color="#444444" size="4">An LLVM compiler backend that generates machine code for the FISC CPU.</font>
+                <div data-silex-type="text" class="editable-style text-element silex-id-1498781390330-4" data-silex-id="silex-id-1498781390330-4">
+                    <div class="silex-element-content normal">
+                        <font color="#444444">
+                            <font size="4">FISC is composed of the following independent subprojects.&nbsp;</font><b><font size="2">(click on the GitHub and FISC logos to access both project pages)</font></b></font>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1444,118 +2855,257 @@
 
     <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1491515759410-36 section-element page-home paged-element contact" data-silex-id="silex-id-1491515759410-36">
         <div data-silex-type="container" class="editable-style silex-id-1491515759409-35 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1491515759409-35">
-            <div data-silex-type="text" class="editable-style text-element silex-id-1491515891360-38" data-silex-id="silex-id-1491515891360-38">
-                <div class="silex-element-content normal">
-                    <h2 class="heading2">
-                        <font color="#ffffff">Contact</font>
-                    </h2>
-                    <div>
-                        <p class="normal">
-                            <font color="#ffffff">You can email me at: <b></b></font>
-                            <font color="#ffffff"><b><a href="mailto:santosmiguel25@gmail.com">santosmiguel25@gmail.com</a></b></font>
-                        </p>
-                        <p class="normal">
-                            <font color="#ffffff">You can also get in touch on GitHub:&nbsp;<b><a href="https://github.com/miguelangelo78">github.com/miguelangelo78</a></b></font>
-                        </p>
-                        <p class="normal">
-                            <font color="#ffffff">And LinkedIn:</font>&nbsp;<a href="https://www.linkedin.com/in/miguelacs/"><b><font color="#ffffff">linkedin.com/in/miguelacs</font></b></a></p>
+
+
+
+
+
+
+            <div data-silex-type="container" class="editable-style container-element silex-component silex-component-animated-container silex-id-1498797630880-78" data-silex-id="silex-id-1498797630880-78">
+                <div id="id_1498797630884_855"></div>
+                <script type="text/javascript">
+                    /*
+                    animation widget from here: https://github.com/silexlabs/Silex/issues/443
+                    */
+                    $(function() {
+                      var bodyEl = $('body');
+                      // execute only outside silex editor
+                      if(!bodyEl.hasClass('silex-runtime')) return;
+                      // init ScrollReveal lib
+                      window.sr = window.sr || ScrollReveal();
+                      // animate this element on page change
+                      bodyEl.on('pageChanged', animate_1498797630884_855);
+                      // animate this element at start
+                      animate_1498797630884_855();
+                      // the function to start the animation
+                      function animate_1498797630884_855 (event, pageName) {
+                        // get the silex element in which we are
+                        var silexElement = $('#id_1498797630884_855').parent();
+                        if(// only if the element is in the dom
+                          silexElement &&
+                          // and is visible in the current page
+                          (silexElement.hasClass(bodyEl.pageable('option').currentPage) ||
+                          // or visible in all pages
+                          !silexElement.hasClass('paged-element')) &&
+                          // but never in mobile mode
+                          (!bodyEl.hasClass('enable-mobile') || $(window).width() >= 480)) {
+                          // use ScrollReveal API
+                          sr.reveal(silexElement, {
+                            origin:  'left',
+                            distance: '20px',
+                            duration: 500,
+                            delay: 0,
+                            rotate: { x: 0, y: 0, z: 0 },
+                            opacity: 0,
+                            scale: 1,
+                            easing: 'linear',
+                            reset: false,
+                            beforeReveal: function(el){
+                              
+                            },
+                            beforeReset: function(el){
+                              
+                            },
+                            afterReveal: function(el){
+                              
+                            },
+                            afterReset: function(el){
+                              
+                            }
+                          });
+                        }
+                      }
+                    })
+                </script>
+                <div data-silex-type="text" class="editable-style text-element silex-id-1491515891360-38" data-silex-id="silex-id-1491515891360-38">
+                    <div class="silex-element-content normal">
+                        <h2 class="heading2">
+                            <font color="#ffffff">Contact</font>
+                        </h2>
+                        <div>
+                            <p class="normal">
+                                <font color="#ffffff">You can email me at: <b></b></font>
+                                <font color="#ffffff"><b><a href="mailto:santosmiguel25@gmail.com">santosmiguel25@gmail.com</a></b></font>
+                            </p>
+                            <p class="normal">
+                                <font color="#ffffff">You can also get in touch on GitHub:&nbsp;<b><a href="https://github.com/miguelangelo78">github.com/miguelangelo78</a></b></font>
+                            </p>
+                            <p class="normal">
+                                <font color="#ffffff">And LinkedIn:</font>&nbsp;<a href="https://www.linkedin.com/in/miguelacs/"><b><font color="#ffffff">linkedin.com/in/miguelacs</font></b></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div data-silex-type="image" class="editable-style silex-id-1498773284036-30 image-element" data-silex-id="silex-id-1498773284036-30">
+                    <a href="https://github.com/miguelangelo78"><img src="assets/githublogo.png" class="silex-element-content"></a>
+                </div>
+                <div data-silex-type="image" class="editable-style silex-id-1498773419132-31 image-element" data-silex-id="silex-id-1498773419132-31">
+                    <a href="https://www.linkedin.com/in/miguelacs/"><img src="assets/linkedinlogo.png" class="silex-element-content"></a>
+                </div>
+                <div data-silex-type="html" class="editable-style silex-id-1491515806933-37 html-element silex-component silex-component-form silex-use-height-not-minheight" data-silex-id="silex-id-1491515806933-37">
+                    <div class="silex-element-content">
+                        <form id="id_1498772737543_273" action="https://formspree.io/santosmiguel25@gmail.com" method="POST">
+
+                            <div>
+                                <label for="field1">Name</label>
+                                <input type="text" required="" id="field1" name="field1" placeholder="Your name here">
+                            </div>
+
+
+                            <div>
+                                <label for="field2">Your email adress</label>
+                                <input type="text" required="" id="field2" name="field2" placeholder="your@email.com">
+                            </div>
+
+
+                            <div class="fill-vertical">
+                                <label for="field3">Your message</label>
+                                <textarea required="" id="field3" name="field3" placeholder="Type your message here"></textarea>
+                            </div>
+
+                            <input type="submit" value="Send">
+                        </form>
+                        <style>
+                            #id_1498772737543_273 input[type=text],
+                            select {
+                                width: 100%;
+                                padding: 12px 20px;
+                                margin: 8px 0;
+                                display: inline-block;
+                                border: 1px solid #ccc;
+                                border-radius: 3px;
+                                box-sizing: border-box;
+                            }
+                            
+                            #id_1498772737543_273 input[type=submit] {
+                                width: 100%;
+                                background-color: #5783ca;
+                                color: #FFFFFF;
+                                padding: 14px 20px;
+                                margin: 8px 0;
+                                border: 1px solid #5783ca;
+                                border-radius: 3px;
+                                cursor: pointer;
+                            }
+                            
+                            #id_1498772737543_273 label {
+                                color: #ffffff;
+                            }
+                            /* *************************** */
+                            /* resize the 3rd field
+   and fill the vertical space */
+                            
+                            #id_1498772737543_273 .fill-vertical {
+                                flex: 1 1 auto;
+                                display: flex;
+                                flex-direction: column;
+                            }
+                            
+                            #id_1498772737543_273 .fill-vertical textarea {
+                                flex: 1 1 auto;
+                                width: 100%;
+                                height: 150px;
+                                padding: 12px 20px;
+                                box-sizing: border-box;
+                                border: 2px solid #ccc;
+                                border-radius: 3px;
+                                background-color: #f8f8f8;
+                                font-size: 16px;
+                                resize: none;
+                            }
+                            /* ************************ */
+                            
+                            #id_1498772737543_273 {
+                                border-radius: 3px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                height: 100%;
+                            }
+                        </style>
+
                     </div>
                 </div>
             </div>
-            <div data-silex-type="html" class="editable-style silex-id-1491515806933-37 html-element silex-component silex-component-form silex-use-height-not-minheight" data-silex-id="silex-id-1491515806933-37">
-                <div class="silex-element-content">
-                    <form id="id_1498772737543_273" action="https://formspree.io/santosmiguel25@gmail.com" method="POST">
-
-                        <div>
-                            <label for="field1">Name</label>
-                            <input type="text" required="" id="field1" name="field1" placeholder="Your name here">
-                        </div>
-
-
-                        <div>
-                            <label for="field2">Your email adress</label>
-                            <input type="text" required="" id="field2" name="field2" placeholder="your@email.com">
-                        </div>
-
-
-                        <div class="fill-vertical">
-                            <label for="field3">Your message</label>
-                            <textarea required="" id="field3" name="field3" placeholder="Type your message here"></textarea>
-                        </div>
-
-                        <input type="submit" value="Send">
-                    </form>
-                    <style>
-                        #id_1498772737543_273 input[type=text],
-                        select {
-                            width: 100%;
-                            padding: 12px 20px;
-                            margin: 8px 0;
-                            display: inline-block;
-                            border: 1px solid #ccc;
-                            border-radius: 3px;
-                            box-sizing: border-box;
-                        }
-                        
-                        #id_1498772737543_273 input[type=submit] {
-                            width: 100%;
-                            background-color: #5783ca;
-                            color: #FFFFFF;
-                            padding: 14px 20px;
-                            margin: 8px 0;
-                            border: 1px solid #5783ca;
-                            border-radius: 3px;
-                            cursor: pointer;
-                        }
-                        
-                        #id_1498772737543_273 label {
-                            color: #ffffff;
-                        }
-                        /* *************************** */
-                        /* resize the 3rd field
-   and fill the vertical space */
-                        
-                        #id_1498772737543_273 .fill-vertical {
-                            flex: 1 1 auto;
-                            display: flex;
-                            flex-direction: column;
-                        }
-                        
-                        #id_1498772737543_273 .fill-vertical textarea {
-                            flex: 1 1 auto;
-                            width: 100%;
-                            height: 150px;
-                            padding: 12px 20px;
-                            box-sizing: border-box;
-                            border: 2px solid #ccc;
-                            border-radius: 3px;
-                            background-color: #f8f8f8;
-                            font-size: 16px;
-                            resize: none;
-                        }
-                        /* ************************ */
-                        
-                        #id_1498772737543_273 {
-                            border-radius: 3px;
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: space-between;
-                            height: 100%;
-                        }
-                    </style>
-
-                </div>
-            </div>
-
-            <div data-silex-type="image" class="editable-style silex-id-1498773284036-30 image-element" data-silex-id="silex-id-1498773284036-30">
-                <a href="https://github.com/miguelangelo78"><img src="assets/githublogo.png" class="silex-element-content"></a>
-            </div>
-
-            <div data-silex-type="image" class="editable-style silex-id-1498773419132-31 image-element" data-silex-id="silex-id-1498773419132-31">
-                <a href="https://www.linkedin.com/in/miguelacs/"><img src="assets/linkedinlogo.png" class="silex-element-content"></a>
-            </div>
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
