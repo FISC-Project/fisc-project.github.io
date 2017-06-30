@@ -130,7 +130,7 @@
         }
         
         .silex-id-1491510465972-1 {
-            background-color: rgba(57, 57, 61, 1);
+            background-color: rgba(255, 255, 255, 1);
             top: 160px;
             left: 5px;
             min-width: 1000px;
@@ -185,7 +185,7 @@
         
         .silex-id-1491514255097-18 {
             width: 1000px;
-            min-height: 1541px;
+            min-height: 1584px;
             top: 15px;
             left: 303px;
         }
@@ -402,7 +402,7 @@
         }
         
         .silex-id-1491515247117-24 {
-            background-color: rgba(253, 246, 235, 1);
+            background-color: rgba(255, 255, 255, 1);
             min-width: 1000px;
             background-image: url('../assets/Nehalem_Die_Shot_2.jpg');
             background-attachment: fixed;
@@ -441,7 +441,7 @@
         .silex-id-1491515325968-26 {
             background-color: rgb(255, 255, 255);
             min-width: 1000px;
-            top: 2519px;
+            top: 2562px;
             left: 5px;
         }
         
@@ -455,7 +455,7 @@
         
         .silex-id-1491515325967-25 {
             width: 1000px;
-            min-height: 1433px;
+            min-height: 1518px;
             top: 15px;
             left: 303px;
         }
@@ -521,6 +521,7 @@
         .silex-id-1498779899204-3 {
             background-image: url('../assets/Intel-Broadwell-Core-i7-5775C_Die.jpg');
             background-attachment: fixed;
+            background-color: rgba(255, 255, 255, 1);
         }
         
         .silex-id-1498779899202-2 {
@@ -676,6 +677,7 @@
             background-size: auto;
             background-repeat: repeat;
             background-attachment: fixed;
+            background-color: rgba(255, 255, 255, 1);
         }
         
         .silex-id-1498776788651-14 {
@@ -683,14 +685,14 @@
         }
         
         .silex-id-1498771618707-9 {
-            top: 13353px;
+            top: 13808px;
             left: 5px;
             min-width: 1000px;
         }
         
         .silex-id-1498771618706-8 {
             width: 1000px;
-            min-height: 4803px;
+            min-height: 4834px;
             top: 15px;
             left: 303px;
         }
@@ -800,6 +802,7 @@
             background-image: url('../assets/cpuchip.jpg');
             background-size: auto;
             background-attachment: fixed;
+            background-color: rgba(255, 255, 255, 1);
         }
         
         .silex-id-1498778407344-34 {
@@ -807,13 +810,13 @@
         }
         
         .silex-id-1498771620207-11 {
-            top: 18794px;
+            top: 18953px;
             left: 5px;
             min-width: 1000px;
         }
         
         .silex-id-1498771620206-10 {
-            min-height: 1142px;
+            min-height: 1161px;
             top: 15px;
             left: 303px;
             width: 1000px;
@@ -955,11 +958,11 @@
         }
         
         .silex-id-1491515759410-36 {
-            background-color: rgba(162, 172, 135, 1);
+            background-color: rgba(255, 255, 255, 1);
             min-width: 1000px;
             background-image: url('../assets/sandybridge1.jpeg');
             background-size: cover;
-            top: 5608px;
+            top: 20149px;
             left: 5px;
             background-attachment: fixed;
         }
@@ -975,7 +978,7 @@
         .silex-id-1491515759409-35 {
             width: 1000px;
             background-color: rgba(49, 54, 84, 0.9058823529411765);
-            min-height: 760px;
+            min-height: 866px;
             top: 15px;
             left: 303px;
         }
@@ -1026,19 +1029,5 @@
             top: 285px;
             left: 67px;
             min-height: 32px;
-        }
-        
-        .silex-id-1491511864480-12 {
-            background-color: rgba(255, 255, 255, 1);
-            min-width: 1000px;
-            top: 6192px;
-            left: 5px;
-        }
-        
-        .silex-id-1491511864479-11 {
-            width: 1000px;
-            min-height: 102px;
-            top: 15px;
-            left: 627px;
         }
     
