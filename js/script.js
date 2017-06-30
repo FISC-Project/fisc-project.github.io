@@ -31,7 +31,7 @@
                         var name = attr.substring(attr.lastIndexOf("#") + 1);
                         // exclude page names (#!page-)
                         if(name.indexOf("!page") !== 0) {
-                            var item = $("." + name);
+                        	var item = $("." + name);
                             // check if there is a hash in the URL to scroll to the anchor at start
                             if(window.location.hash.indexOf("#" + name) > 0) {
                                 var offsetTop = item.offset().top;
@@ -48,7 +48,7 @@
                             }
                         }
                     }
-                });
+			});
             // Bind click handler to menu items
             // so we can get a fancy scroll animation
             scrollItems.each(function() {
@@ -66,6 +66,18 @@
                     }, 100);
                 });
             })
+
+            $(".page-logo").click(function(e){
+            	// leave time for the page to open
+                // and then scroll
+                setTimeout(function() {
+                	var offsetTop = $(".home").offset().top;
+                    $('html, body').stop().animate({
+                    	scrollTop: offsetTop - navSectionHeight
+                    }, 300);
+                    e.preventDefault();
+                }, 100);
+            });
         
             // Bind to scroll
             $(window).scroll(function(){
