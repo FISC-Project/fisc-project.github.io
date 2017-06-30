@@ -577,7 +577,7 @@
             background-image: url('../assets/Nehalem_Die_Shot_2.jpg');
             background-attachment: fixed;
             background-size: auto;
-            background-position: center center;
+            background-position: top center;
             background-repeat: repeat;
             top: 1341px;
             left: 5px;
@@ -588,6 +588,8 @@
             .silex-id-1491515247117-24 {
                 top: 4105px;
                 left: 0px;
+                background-position: top right;
+                background-repeat: no-repeat;
             }
         }
         
@@ -604,7 +606,7 @@
         @media only screen and (max-width: 480px),
         only screen and (max-device-width: 480px) {
             .silex-id-1491515247116-23 {
-                min-height: 108px;
+                min-height: 267px;
             }
         }
         
@@ -712,6 +714,7 @@
             background-image: url('../assets/Intel-Broadwell-Core-i7-5775C_Die.jpg');
             background-attachment: fixed;
             background-color: rgba(255, 255, 255, 1);
+            background-position: top left;
         }
         
         @media only screen and (max-width: 480px),
@@ -719,6 +722,7 @@
             .silex-id-1498779899204-3 {
                 top: 5807px;
                 left: 0px;
+                background-repeat: no-repeat;
             }
         }
         
@@ -729,7 +733,7 @@
         @media only screen and (max-width: 480px),
         only screen and (max-device-width: 480px) {
             .silex-id-1498779899202-2 {
-                min-height: 112px;
+                min-height: 271px;
             }
         }
         
@@ -1131,6 +1135,16 @@
             background-repeat: repeat;
             background-attachment: fixed;
             background-color: rgba(255, 255, 255, 1);
+            background-position: top left;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498776788653-15 {
+                background-repeat: repeat;
+                background-position: center left;
+                background-size: auto;
+            }
         }
         
         .silex-id-1498776788651-14 {
@@ -1140,7 +1154,7 @@
         @media only screen and (max-width: 480px),
         only screen and (max-device-width: 480px) {
             .silex-id-1498776788651-14 {
-                min-height: 109px;
+                min-height: 268px;
             }
         }
         
@@ -1485,6 +1499,8 @@
             .silex-id-1498778407345-35 {
                 top: 15007px;
                 left: 0px;
+                background-repeat: repeat;
+                background-position: top center;
             }
         }
         
@@ -1495,7 +1511,7 @@
         @media only screen and (max-width: 480px),
         only screen and (max-device-width: 480px) {
             .silex-id-1498778407344-34 {
-                min-height: 239px;
+                min-height: 307px;
             }
         }
         
